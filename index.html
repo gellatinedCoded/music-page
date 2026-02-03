@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap to Play</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+
+        img {
+            width: 90%;
+            max-width: 350px;
+            border-radius: 15px;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TEXT -->
+    <h1>What's up pretty lady : 3</h1>
+
+    <!-- IMAGE -->
+    <img src="image.jpg" alt="Image">
+
+    <!-- MUSIC -->
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- BUTTON -->
+    <button onclick="playMusic()">▶ Tap to Play Music</button>
+
+    <script>
+        function playMusic() {
+            document.getElementById("music").play();
+        }
+    </script>
+
+</body>
+</html>
